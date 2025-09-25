@@ -1,5 +1,4 @@
 # Roblox Cookie Decoder
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 Add-Type -AssemblyName System.Security
 
 # Path to the Roblox cookies file
@@ -38,4 +37,5 @@ try {
 } catch {
     Write-Host "Failed to decrypt. You must run this on the same Windows account that created the file." -ForegroundColor Red
 }
+
 
